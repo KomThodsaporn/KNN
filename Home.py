@@ -68,15 +68,14 @@ if st.button("ทำนายผล"):
    y = dt.variety   
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)   
-   
    x_input = np.array([[pt_len, pt_wd, sp_len, sp_wd]])
-
+   
    st.write(Knn_model.predict(x_input))
    out=Knn_model.predict(x_input)
 
-   if out[0] == 'Setosa':
+   if out[0] == 'Versicolor':
     st.image("./img/iris1.jpg")
-   elif out[0] == 'Versicolor':       
+   elif out[0] == 'Verginiga':       
     st.image("./img/iris2.jpg")
    else:
     st.image("./img/iris3.jpg")
