@@ -5,5 +5,5 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-st.header('kairung')
+st.header('Thodsaporn')
 st.image("./img/thodsaporn.jpg")
